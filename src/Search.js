@@ -9,7 +9,7 @@ import axios from "axios";
 
 function App() {
   const [query, setQuery] = useState("");
-  const keys = ["image", "title", "price"];
+  const keys = ["image", "title", "price", "catagory"];
    const Search = (data) => {
      return data.filter((item) =>
        keys.some((key) => item[key].toLowerCase().includes(query))
